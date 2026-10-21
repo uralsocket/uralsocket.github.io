@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" role="img" aria-labelledby="title">
+  <title id="title">CMPRS — четыре стрелки сжатия вокруг кнопки воспроизведения</title>
+  <defs>
+    <linearGradient id="tile" x1="70" y1="18" x2="180" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b1d1e"/>
+      <stop offset=".46" stop-color="#101112"/>
+      <stop offset="1" stop-color="#08090a"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="72" y1="18" x2="186" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e6e8e9" stop-opacity=".5"/>
+      <stop offset=".4" stop-color="#777b7e" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#777b7e" stop-opacity=".12"/>
+    </linearGradient>
+    <radialGradient id="surface" cx="0" cy="0" r="1" gradientTransform="translate(102 22) rotate(80) scale(96 166)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-35%" y="-35%" width="170%" height="170%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3.6"/>
+    </filter>
+    <g id="mark">
+      <g stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m58 58 38 38M77 96h19V77"/>
+        <path d="m198 58-38 38m19 0h-19V77"/>
+        <path d="m58 198 38-38m-19 0h19v19"/>
+        <path d="m198 198-38-38m19 0h-19v19"/>
+      </g>
+      <rect x="96" y="108" width="64" height="40" rx="9" stroke="#fff" stroke-width="5.5"/>
+      <path d="m122 119 15 9-15 9Z" fill="#fff" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <rect x="18" y="18" width="220" height="220" rx="53" fill="url(#tile)" stroke="url(#edge)" stroke-width="1.5"/>
+  <rect x="19" y="19" width="218" height="218" rx="52" fill="url(#surface)"/>
+  <use href="#mark" opacity=".3" filter="url(#glow)"/>
+  <use href="#mark"/>
+</svg>
