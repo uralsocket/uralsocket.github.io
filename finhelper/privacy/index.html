@@ -1,100 +1,28 @@
 <!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <title>FinHelper — Политика конфиденциальности</title>
-  <meta name="description" content="Политика конфиденциальности приложения FinHelper.">
-  <link rel="canonical" href="https://gleb.day/finhelper/privacy/">
-  <style>
-    :root { color-scheme: light dark; --bg:#f5f5f7; --card:#fff; --text:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --accent:#0071e3; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#a1a1a6; --line:#38383a; --accent:#2997ff; } }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif; }
-    main { width:min(860px,calc(100% - 32px)); margin:48px auto; }
-    header,article { background:var(--card); border:1px solid var(--line); border-radius:24px; padding:clamp(24px,5vw,48px); }
-    header { margin-bottom:18px; }
-    h1 { margin:0 0 8px; font-size:clamp(34px,6vw,54px); line-height:1.05; letter-spacing:-.03em; }
-    h2 { margin:36px 0 8px; font-size:24px; line-height:1.2; }
-    h3 { margin:32px 0 8px; font-size:21px; }
-    p,li { color:var(--muted); }
-    a { color:var(--accent); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .meta { margin:0; }
-    .language { display:inline-flex; gap:8px; margin-top:18px; padding:6px; border-radius:999px; background:var(--bg); }
-    .language a { padding:6px 12px; border-radius:999px; font-weight:600; }
-    .language a:first-child { color:var(--text); background:var(--card); box-shadow:0 1px 6px rgba(0,0,0,.12); }
-    .divider { height:1px; background:var(--line); margin:48px 0; }
-    footer { padding:24px 8px; text-align:center; color:var(--muted); font-size:14px; }
-    @media (max-width:600px) { main { margin:16px auto; } header,article { border-radius:18px; padding:22px; } }
-  </style>
-</head>
-<body>
-<main>
-  <header>
-    <h1>FinHelper</h1>
-    <p class="meta">Политика конфиденциальности · Privacy Policy</p>
-    <p class="meta">Дата вступления в силу / Effective date: 1 сентября 2026 г.</p>
-    <nav class="language" aria-label="Language"><a href="#ru">Русский</a><a href="#en">English</a></nav>
-  </header>
-
-  <article>
-    <section id="ru" lang="ru">
-      <h2>Политика конфиденциальности</h2>
-      <p>FinHelper разработан Gleb Karavaev. Эта политика описывает обработку информации приложениями FinHelper для iOS, iPadOS и macOS.</p>
-
-      <h3>Локальные финансовые данные</h3>
-      <p>Счета, балансы, транзакции, категории, лимиты, ожидаемые поступления, имена клиентов, комментарии, настройки и сформированные отчёты хранятся локально на устройстве пользователя. Разработчик не использует сервер FinHelper или систему учётных записей, получающую эти данные.</p>
-      <p>Если пользователь включает синхронизацию через папку, FinHelper сохраняет файл данных только в папке, выбранной пользователем через системный интерфейс, включая iCloud Drive. FinHelper не добавляет к этому файлу собственное шифрование. Управление доступом, шифрование при хранении и передаче, сроки хранения и удаление обеспечиваются устройством и выбранным поставщиком хранилища.</p>
-
-      <h3>Курсы валют и криптовалют</h3>
-      <p>FinHelper запрашивает публичные котировки у Frankfurter, Binance и, при необходимости, Coinbase. Запрос содержит обозначения валют или активов и обычные сетевые метаданные, например IP-адрес. Счета, балансы, транзакции, категории, комментарии, клиенты и резервные копии этим сервисам не передаются.</p>
-
-      <h3>Необязательный умный анализ Gemini</h3>
-      <p>Умный анализ запускается только после того, как пользователь самостоятельно укажет личный Gemini API-ключ и нажмёт кнопку анализа. FinHelper не обращается к Gemini в фоне и не повторяет неудачные запросы автоматически.</p>
-      <p>Для анализа Google Gemini получает подготовленное финансовое досье выбранного периода. Оно может включать балансы неархивных счетов, агрегаты и отдельные сведения о транзакциях, категории, лимиты, ожидаемые поступления, имена клиентов, комментарии, локально рассчитанные показатели и ограниченную по размеру часть предыдущего отчёта. Архивные счета, файл синхронизации и посторонние данные устройства не передаются. API-ключ хранится в Keychain и не включается в резервные копии или синхронизацию. Условия обработки Google зависят от тарифа Gemini API пользователя; разработчик FinHelper не получает досье или ответ модели.</p>
-
-      <h3>Отслеживание, реклама и биометрия</h3>
-      <p>В FinHelper нет рекламы, сторонних аналитических SDK, межприложенческого отслеживания и продажи персональных данных. Face ID обрабатывается системными средствами Apple; приложение получает только результат проверки и не получает биометрические шаблоны.</p>
-
-      <h3>Резервные копии и удаление</h3>
-      <p>Пользователь может экспортировать резервную копию и самостоятельно выбрать место сохранения, удалить операции или сбросить данные приложения. Экспортированные и синхронизированные файлы остаются под контролем пользователя и удаляются отдельно в месте их хранения.</p>
-
-      <h3>Дети, изменения и контакты</h3>
-      <p>FinHelper является общим инструментом учёта финансов и не предназначен специально для детей. Существенные изменения политики отражаются обновлением текста и даты вступления в силу.</p>
-      <p>Поддержка: <a href="mailto:uralsocket@gmail.com">uralsocket@gmail.com</a><br>Новости разработки: <a href="https://t.me/fnhlpr">t.me/fnhlpr</a></p>
-    </section>
-
-    <div class="divider" role="separator"></div>
-
-    <section id="en" lang="en">
-      <h2>Privacy Policy</h2>
-      <p>FinHelper is developed by Gleb Karavaev. This policy explains how the FinHelper applications for iOS, iPadOS, and macOS process information.</p>
-
-      <h3>Local financial data</h3>
-      <p>Accounts, balances, transactions, categories, limits, expected payments, client aliases, comments, settings, and generated reports are stored locally on the user's device. The developer does not operate a FinHelper account system or server that receives this data.</p>
-      <p>If the user enables folder synchronization, FinHelper writes a data file only to a folder explicitly selected through the system interface, including iCloud Drive. FinHelper does not add application-level encryption to this file. Access control, encryption at rest and in transit, retention, and deletion are provided by the device and the selected storage provider.</p>
-
-      <h3>Currency and crypto rates</h3>
-      <p>FinHelper requests public market data from Frankfurter, Binance, and Coinbase as a fallback. Requests contain currency or asset symbols and ordinary network metadata such as an IP address. Accounts, balances, transactions, categories, comments, clients, and backups are not sent to these services.</p>
-
-      <h3>Optional Gemini Smart Analysis</h3>
-      <p>Smart Analysis runs only after the user provides a personal Gemini API key and presses the analysis button. FinHelper does not contact Gemini in the background or automatically retry failed requests.</p>
-      <p>For an analysis, Google Gemini receives a purpose-built financial dossier for the selected period. It may include balances from non-archived accounts, transaction aggregates and selected transaction details, categories, limits, expected payments, client aliases, comments, locally calculated metrics, and a size-limited part of the previous report. Archived accounts, the synchronization file, and unrelated device data are excluded. The API key is stored in Keychain and is not included in backups or synchronization. Google's processing terms depend on the user's Gemini API tier; the FinHelper developer does not receive the dossier or response.</p>
-
-      <h3>Tracking, advertising, and biometrics</h3>
-      <p>FinHelper contains no advertising, third-party analytics SDK, cross-app tracking, or sale of personal data. Face ID is processed by Apple system frameworks; FinHelper receives only the success or failure result and never receives biometric templates.</p>
-
-      <h3>Backups and deletion</h3>
-      <p>Users can export a backup and choose its destination, delete operations, or reset application data. Previously exported or synchronized files remain under the user's control and must be deleted separately at their storage location.</p>
-
-      <h3>Children, changes, and contact</h3>
-      <p>FinHelper is a general personal-finance tool and is not directed to children. Material changes will be reflected by updating this policy and its effective date.</p>
-      <p>Support: <a href="mailto:uralsocket@gmail.com">uralsocket@gmail.com</a><br>Development news: <a href="https://t.me/fnhlpr">t.me/fnhlpr</a></p>
-    </section>
-  </article>
-  <footer>© 2026 Gleb Karavaev. All rights reserved.</footer>
-</main>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FinHelper — Privacy Policy</title><meta name="description" content="How FinHelper handles your financial records, iCloud sync and exchange rates."><link rel="canonical" href="https://gleb.day/finhelper/privacy/"><link rel="icon" href="../assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../style.css?v=75"><style>.policy{max-width:740px}.policy h1{font-size:46px;line-height:1.1;letter-spacing:-1.6px}.policy h2{font-size:22px;line-height:1.3;letter-spacing:-.4px;margin:34px 0 10px}.policy p{font-size:16px;line-height:1.75;color:#52696c}.policy .date{font-size:13px;color:#7a8c8f}.policy a{text-decoration:underline;text-underline-offset:3px}[hidden]{display:none!important}</style></head>
+<body><header class="topbar"><a class="brand" href="../"><img src="../assets/mark.svg" width="36" height="36" alt=""><span>FinHelper</span></a><nav class="language" aria-label="Language"><button data-policy-language="en" aria-pressed="true">EN</button><button data-policy-language="ru" aria-pressed="false">RU</button></nav></header>
+<main class="section-wrap support-page policy">
+<article lang="en" data-policy="en">
+<h1>Privacy Policy</h1><p class="date">Effective 22 October 2026 · FinHelper 2.6.13 for iPhone and iPad</p>
+<p>FinHelper is developed by Gleb Karavaev. This policy explains how the app handles your information.</p>
+<h2>Your financial records</h2><p>Accounts, balances, transactions, categories, banks, clients, expected payments, comments and settings are stored on your device. FinHelper has no developer-operated account system or financial-data server.</p>
+<h2>Private iCloud sync</h2><p>When iCloud is available, FinHelper automatically synchronizes records through your Apple Account’s private CloudKit database. Apple processes and stores these records under its iCloud terms. The developer does not receive access to your private database. The app also works locally when iCloud is unavailable.</p>
+<h2>Analysis and exchange rates</h2><p>Financial analysis is calculated on your device. Financial records are not sent to an AI service. To update exchange rates, the app contacts Frankfurter with currency codes and standard network information, including your IP address. Balances, transactions, client names and comments are not included in those requests.</p>
+<h2>Advertising and access protection</h2><p>FinHelper contains no advertising SDKs, third-party analytics or cross-app tracking. It does not sell personal information. Apple handles Face ID, Touch ID and device-passcode authentication; the app receives the authentication result, not biometric templates.</p>
+<h2>Backups and deletion</h2><p>You can edit or delete records and export a backup. FinHelper does not add its own encryption to exported files. Device and iCloud protection are provided by Apple. Copies you export elsewhere remain under your control; manage those copies and your iCloud storage through the relevant system settings.</p>
+<h2>Support and policy changes</h2><p>If you contact support, we receive the address and information you choose to send. FinHelper is not directed specifically at children. Material changes are reflected in this policy’s effective date.</p>
+<p>Contact: <a href="mailto:uralsocket@gmail.com">uralsocket@gmail.com</a></p><p><a href="./archive-2026-09.html">Policy for earlier versions</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
+</article>
+<article lang="ru" data-policy="ru" hidden>
+<h1>Политика конфиденциальности</h1><p class="date">Действует с 22 октября 2026 · FinHelper 2.6.13 для iPhone и iPad</p>
+<p>Разработчик FinHelper — Gleb Karavaev. Эта политика описывает обработку информации приложением.</p>
+<h2>Финансовые записи</h2><p>Счета, балансы, операции, категории, банки, клиенты, ожидаемые выплаты, комментарии и настройки хранятся на вашем устройстве. У FinHelper нет системы учётных записей или сервера разработчика, получающего финансовые данные.</p>
+<h2>Приватная синхронизация iCloud</h2><p>При доступном iCloud FinHelper автоматически синхронизирует записи через приватную базу CloudKit вашего Аккаунта Apple. Apple обрабатывает и хранит эти данные по условиям iCloud. Разработчик не получает доступ к вашей приватной базе. Если iCloud недоступен, приложение продолжает работать локально.</p>
+<h2>Анализ и курсы валют</h2><p>Финансовый анализ рассчитывается на устройстве. Финансовые записи не отправляются в ИИ-сервисы. Для обновления курсов приложение обращается к Frankfurter: передаются коды валют и обычные сетевые сведения, включая IP-адрес. Балансы, операции, имена клиентов и комментарии в эти запросы не входят.</p>
+<h2>Реклама и защита доступа</h2><p>В FinHelper нет рекламных SDK, сторонней аналитики и межприложенческого отслеживания. Персональные данные не продаются. Face ID, Touch ID и проверку код-пароля обрабатывает Apple: приложение получает результат проверки, а не биометрические шаблоны.</p>
+<h2>Резервные копии и удаление</h2><p>Вы можете изменять и удалять записи, а также экспортировать резервную копию. FinHelper не добавляет собственное шифрование к экспортированным файлам. Защиту устройства и iCloud обеспечивает Apple. Копии, сохранённые в других местах, остаются под вашим контролем; ими и хранилищем iCloud можно управлять через соответствующие системные настройки.</p>
+<h2>Поддержка и изменения политики</h2><p>При обращении в поддержку мы получаем адрес и сведения, которые вы решили отправить. Приложение не предназначено специально для детей. Существенные изменения отражаются в дате действия этой политики.</p>
+<p>Контакт: <a href="mailto:uralsocket@gmail.com">uralsocket@gmail.com</a></p><p><a href="./archive-2026-09.html">Политика для предыдущих версий</a> · <a href="https://www.apple.com/legal/privacy/">Политика Apple</a></p>
+</article></main>
+<script>document.querySelectorAll('[data-policy-language]').forEach(button=>button.addEventListener('click',()=>{const language=button.dataset.policyLanguage;document.documentElement.lang=language;document.title=language==='ru'?'FinHelper — Политика конфиденциальности':'FinHelper — Privacy Policy';document.querySelectorAll('[data-policy]').forEach(section=>section.hidden=section.dataset.policy!==language);document.querySelectorAll('[data-policy-language]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));}));</script>
+</body></html>

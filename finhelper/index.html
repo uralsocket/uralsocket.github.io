@@ -12,8 +12,9 @@
   <meta property="og:url" content="https://gleb.day/finhelper/">
   <link rel="canonical" href="https://gleb.day/finhelper/">
   <link rel="icon" type="image/svg+xml" href="./assets/mark.svg">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./site.js" defer></script>
+  <link rel="stylesheet" href="./style.css?v=75">
+  <link rel="stylesheet" href="./device.css?v=75">
+  <script src="./site.js?v=75" defer></script>
 </head>
 <body>
   <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -46,7 +47,7 @@
       </div>
       <div class="hero-product" aria-label="FinHelper on iPhone">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-        <div class="phone"><img id="hero-screen" src="./assets/en-overview.webp" width="1206" height="2622" alt="FinHelper overview showing account balances and quick entry" data-alt="screenOverview"></div>
+        <div class="phone"><img class="phone-screen" id="hero-screen" src="./assets/en-overview.webp" width="1206" height="2622" alt="FinHelper overview showing account balances and quick entry" data-alt="screenOverview"><img class="phone-frame" src="./assets/iphone-frame.svg" alt="" aria-hidden="true"></div>
         <div class="float-note"><svg class="icon"><use href="#i-clients"/></svg><span data-i18n="floatNote">Your work. Your money. Together.</span></div>
       </div>
     </section>
@@ -86,11 +87,11 @@
         <article><svg class="icon feature-icon"><use href="#i-bank"/></svg><h3 data-i18n="accountsTitle">Across banks. Across currencies.</h3><p data-i18n="accountsBody">Group accounts by bank and see their value in your main currency. Record the actual amount received when you exchange money.</p></article>
         <article><svg class="icon feature-icon"><use href="#i-chart"/></svg><h3 data-i18n="analysisTitle">Go beyond the total.</h3><p data-i18n="analysisBody">Explore spending by category, compare periods and uncover recurring patterns. Clear explanations help you turn numbers into better decisions.</p></article>
         <article><svg class="icon feature-icon"><use href="#i-calendar"/></svg><h3 data-i18n="weeklyTitle">A little clarity, every week.</h3><p data-i18n="weeklyBody">See what changed, what went well and a useful next step. Your weekly review brings the important things into focus.</p></article>
-        <article><svg class="icon feature-icon"><use href="#i-lock"/></svg><h3 data-i18n="privacyTitle">Personal means personal.</h3><p data-i18n="privacyBody">Your finances stay on your devices. Protect the app with Face ID and sync through your own iCloud Drive folder.</p></article>
+        <article><svg class="icon feature-icon"><use href="#i-lock"/></svg><h3 data-i18n="privacyTitle">Personal means personal.</h3><p data-i18n="privacyBody">Your finances stay yours. Protect access with Face ID and sync automatically through your iCloud.</p></article>
       </div>
     </section>
 
-    <section class="section-wrap screens-section reveal"><div class="screens-heading"><h2 data-i18n="screensTitle">A familiar feel.<br>A clearer head.</h2><p data-i18n="screensBody">Quick entry when you’re busy. A deeper look when you need it.</p></div><div class="screens"><figure><img data-screen="analytics" src="./assets/en-analytics.webp" width="1206" height="2622" loading="lazy" alt="FinHelper analysis" data-alt="screenAnalysis"><figcaption data-i18n="captionAnalysis">See the bigger picture</figcaption></figure><figure><img data-screen="clients" src="./assets/en-clients.webp" width="1206" height="2622" loading="lazy" alt="FinHelper clients and expected payments" data-alt="screenClients"><figcaption data-i18n="captionClients">Know what’s coming</figcaption></figure><figure><img data-screen="accounts" src="./assets/en-accounts.webp" width="1206" height="2622" loading="lazy" alt="FinHelper bank and account groups" data-alt="screenAccounts"><figcaption data-i18n="captionAccounts">Bring your accounts together</figcaption></figure></div></section>
+    <section class="section-wrap screens-section reveal"><div class="screens-heading"><h2 data-i18n="screensTitle">A familiar feel.<br>A clearer head.</h2><p data-i18n="screensBody">Quick entry when you’re busy. A deeper look when you need it.</p></div><div class="screens"><figure><div class="phone"><img class="phone-screen" data-screen="analytics" src="./assets/en-analytics.webp" width="1206" height="2622" loading="lazy" alt="FinHelper analysis" data-alt="screenAnalysis"><img class="phone-frame" src="./assets/iphone-frame.svg" alt="" aria-hidden="true"></div><figcaption data-i18n="captionAnalysis">See the bigger picture</figcaption></figure><figure><div class="phone"><img class="phone-screen" data-screen="clients" src="./assets/en-clients.webp" width="1206" height="2622" loading="lazy" alt="FinHelper clients and expected payments" data-alt="screenClients"><img class="phone-frame" src="./assets/iphone-frame.svg" alt="" aria-hidden="true"></div><figcaption data-i18n="captionClients">Know what’s coming</figcaption></figure><figure><div class="phone"><img class="phone-screen" data-screen="accounts" src="./assets/en-accounts.webp" width="1206" height="2622" loading="lazy" alt="FinHelper bank and account groups" data-alt="screenAccounts"><img class="phone-frame" src="./assets/iphone-frame.svg" alt="" aria-hidden="true"></div><figcaption data-i18n="captionAccounts">Bring your accounts together</figcaption></figure></div></section>
 
     <section class="closing section-wrap reveal"><img src="./assets/mark.svg" alt="" width="76" height="76"><h2 data-i18n-html="closingTitle">You do the work.<br><span>Make your money make sense.</span></h2><a class="button" href="https://testflight.apple.com/join/EN7bbdx1"><span data-i18n="joinBeta">Get the public beta</span><svg class="icon"><use href="#i-arrow"/></svg></a><p class="availability" data-i18n="betaNote">Available to try with TestFlight.</p></section>
   </main>

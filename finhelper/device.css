@@ -1,0 +1,12 @@
+/* Shared vector chassis; the application captures remain unmodified. */
+:root{--sea:#087c87;--emerald:#007f67;--coral:#d43e2e}
+.phone{width:276px;aspect-ratio:1286/2702;border:0;border-radius:0;background:transparent;overflow:visible;box-shadow:none;filter:drop-shadow(0 24px 30px #123d4027)}
+.phone .phone-screen{position:absolute;left:3.11042%;top:1.48038%;width:93.77916%;height:97.03923%;border-radius:12.52073%/5.759%;object-fit:fill;border:0;box-shadow:none}
+.phone .phone-frame{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;box-shadow:none;pointer-events:none}
+.screens .phone{width:100%;max-width:276px;margin-inline:auto;transform:none}
+.screens .phone img{border:0;box-shadow:none}
+.bar.income,.income-key{background:var(--emerald)}
+.bar.expense,.expense-key{background:var(--coral)}
+.north{background:#007f6714;color:#007f67}.mira{background:#d43e2e12;color:#a54034}.atlas{background:#8565ac14;color:#765299}
+@media(max-width:1000px){.hero .phone{width:245px}}
+@media(max-width:700px){.hero .phone{width:250px}.screens .phone{max-width:260px}}
