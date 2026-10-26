@@ -1,0 +1,7 @@
+/* The circle is allowed outside the hero grid, but its diameter fits the viewport. */
+.hero{overflow:visible}
+.hero-product{isolation:isolate}
+.sea-orbit-root{position:absolute;left:50%;top:50%;width:var(--orbit-size,100%);max-width:600px;aspect-ratio:1;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
+.sea-orbit-motion{width:100%;height:100%;transform:translate(var(--orbit-x,0px),var(--orbit-y,0px));transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.sea-orbit-art{display:block;width:100%;height:100%;overflow:visible}
+@media(prefers-reduced-motion:reduce){.sea-orbit-motion{transform:none;transition:none}}
